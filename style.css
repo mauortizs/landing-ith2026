@@ -1,0 +1,706 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #e5ca71;
+  font-family: 'Nunito Sans', sans-serif;
+  color: white;
+}
+
+/* ========== General ========== */
+/* Separador Amarillo */
+.separador-ith {
+  width: 100px;
+  height: 2px;
+  background-color: #273689;
+  margin: 1.5em auto 2em auto;
+}
+
+/* Botón Amarillo Aladdin */
+.boton-anaranjado-ith,
+.boton-anaranjado-ith-2 {
+  background-color: #de7323;
+  color: white;
+  font-weight: 700;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 1.5em;
+  font-family: 'Open Sans', sans-serif;
+  display: inline-block;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  position: relative;
+}
+
+.boton-anaranjado-ith { 
+  top: -50px; 
+} /* solo sección 1 */
+
+.boton-anaranjado-ith:hover,
+.boton-anaranjado-ith-2:hover {
+  cursor: pointer;
+  background-color: #1d1e1d;
+  color: #f6f6f1;
+  border: 2px solid #de7323;
+}
+
+.first-section-boton-aladdin { 
+  margin-top: 1em; 
+}
+
+/* Posiciones */
+.carrusel-flecha.izquierda,
+.left-arrow,
+.left-arrow-cast2,
+.left-arrow-teachers { 
+  left: 0.5rem; 
+}
+
+.carrusel-flecha.derecha,
+.right-arrow,
+.right-arrow-cast2,
+.right-arrow-teachers { 
+  right: 0.5rem; 
+}
+
+
+
+/* ========== Sección 0: Banner Hero ========== */
+.hero-aladdin-mobile { 
+  display: none; 
+}
+
+.hero-ith-desktop {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ========== Sección 1: Sobre el musical ========== */
+.ith-layout {
+  color: #273689;
+  font-family: 'Quicksand', sans-serif;
+  padding: 3em 2em 0em;
+  text-align: center;
+}
+.ith-layout h1 {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 3.5em;
+  font-weight: 900;
+  color: #273689 !important;
+  line-height: 1em;
+  letter-spacing: -3px;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+
+.ith-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: left;
+  gap: 2rem;
+}
+
+.ith-text {
+  flex: 1 1 500px;
+  font-size: 1.6em;
+  margin-bottom: 0;
+}
+
+.ith-text p:last-child { 
+  margin-bottom: 0; 
+}
+
+.ith-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+
+.ith-image img { 
+  width: 400px; 
+}
+
+  /* ========== Sección 2: Mira nuestro tailer ========== */
+.ith-trailer-section {
+  padding: 3em 2em 0em;
+  text-align: center;
+  color: #fff;
+}
+.ith-trailer-title {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 900;
+  font-size: 3.5em;
+  line-height: 1em;
+  letter-spacing: -3px;
+  color: #273689;
+  display: inline-block;
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+}
+.ith-video-wrapper {
+  width: 100%;
+  max-width: 980px;
+  aspect-ratio: 16 / 9;
+  max-height: 520px;
+  margin: 0 auto 1.5em;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 28px rgba(0,0,0,.35);
+}
+.ith-video-wrapper iframe { 
+  width: 100%; 
+  height: 100%; 
+  display: block; 
+  border: 0; 
+}
+
+.ith-trailer-cta { 
+  text-align: center; 
+}
+
+.ith-trailer-cta .boton-anaranjado-ith { 
+  top: 0; 
+  margin-top: 1.5em; 
+}
+
+/* ========== Sección 3: Sobre el Taller Montaje ========== */
+.ith-workshop-section {
+  padding: 3em 2em 0em;
+  color: #273689;
+  text-align: center;
+}
+.ith-workshop-title {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 900;
+  font-size: 3.5em;
+  line-height: 1em;
+  letter-spacing: -3px;
+  color: #273689;
+  display: inline-block;
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+}
+.ith-workshop-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: left;
+}
+.workshop-gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+  width: min(420px, 40%);
+}
+.workshop-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  box-shadow: 0 10px 24px rgba(0,0,0,.35);
+}
+.ith-workshop-section 
+.ith-text {
+  flex: 1 1 500px;
+  font-size: 1.6em;
+}
+
+/* CTA inferior - dos botones mismo ancho */
+.workshop-cta {
+  display: flex;
+  gap: 1rem;
+  max-width: 820px;
+  margin: 2rem auto 0;
+  justify-content: center;
+}
+
+.workshop-cta 
+.boton-anaranjado-ith {
+  flex: 1 1 0;
+  width: 100%;
+  text-align: center;
+  top: 0;
+  margin: 0;
+}
+
+
+
+/* Flechas de navegación (Produccion) */
+.carrusel-flecha,
+.arrow {
+  background-color: #d9d9d9;
+  color: black;
+  border: none;
+  font-size: 2rem;
+  padding: 0.5em 0.7em;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+  z-index: 10;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: none; /* oculto por defecto */
+}
+
+.carrusel-flecha:hover,
+.arrow:hover { 
+  background-color: white; 
+}
+
+
+/* ========== Sección 5: Cast 1 ========== */
+
+.elenco-section.pagina-ith  {
+  color: white;
+  text-align: center;
+  padding: 3em 2em 0em;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.elencos-cast{
+    font-family: 'Nunito Sans', sans-serif;
+  font-size: 3.5em;
+  font-weight: 900;
+  color: #273689;
+  line-height: 1em;
+  letter-spacing: -3px;
+  margin: 0 0 0.5em 0;
+}
+
+.elenco-section.pagina-ith h3 {
+  font-family: 'Nunito Sans', sans-serif;
+  color: #273689;
+  line-height: 1em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.carousel-card h4 {
+  margin: 0.5rem 0;
+  font-family: 'Quicksand', sans-serif;
+  color: #273689;
+    font-size: 1.5em;
+
+}
+
+.carousel-card p{
+    margin: 0.5rem 0;
+  font-family: 'Quicksand', sans-serif;
+  color: #273689;
+  font-size: 1em;
+}
+
+.carousel-container { 
+  position: relative; 
+  overflow: hidden; 
+}
+
+.carousel-track {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  padding-bottom: 1rem;
+}
+
+.carousel-track::-webkit-scrollbar { display: none; 
+}
+
+.carousel-card {
+  flex: 0 0 calc((100% - 4.5rem) / 4); /* 4 visibles */
+  scroll-snap-align: start;
+  text-align: center;
+  border: none;
+}
+
+.carousel-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ========== Sección 7: Números Musicales ========== */
+.ith-songs-section {
+  padding: 3em 2em 0em;
+  text-align: center;
+  color: #fff;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.ith-songs-title{
+      font-family: 'Nunito Sans', sans-serif;
+  font-size: 3.5em;
+  font-weight: 900;
+  color: #273689;
+  line-height: 1em;
+  letter-spacing: -3px;
+  margin: 0 0 0.5em 0;
+}
+
+.ith-songs-section h3 {
+  font-family: 'Nunito Sans', sans-serif;
+  color: #273689;
+  line-height: 1em;
+  text-align: center;
+  margin: 1em 0 1em;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.ith-songs-section p {
+  margin: 0.4em 0;
+  font-size: 1.6em;
+  color: #273689;
+}
+.songs-cta { 
+  margin-top: 1.5em; 
+}
+
+.songs-cta 
+.boton-anaranjado-ith { 
+  top: 0; 
+}
+
+/* ========== Sección 8: Equipo Creativo ========== */
+
+.teachers-section-ith {
+  text-align: center;
+  padding: 3em 2em 0em;
+  color: #273689;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.teachers-section-ith h2{
+      font-family: 'Nunito Sans', sans-serif;
+  font-size: 3.5em;
+  font-weight: 900;
+  color: #273689;
+  line-height: 1em;
+  letter-spacing: -3px;
+  margin: 0 0 0.5em 0;
+}
+
+.carousel-container.carousel-teachers { 
+  position: relative; 
+  overflow: hidden; 
+}
+
+.carousel-track-teachers-ith {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  padding-bottom: 1rem;
+}
+
+.carousel-track-teachers-ith::-webkit-scrollbar { 
+  display: none; 
+}
+
+.carousel-card-teachers-ith {
+  flex: 0 0 25%; /* 4 visibles */
+  scroll-snap-align: start;
+  text-align: center;
+}
+
+.carousel-card-teachers-ith img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.carousel-card-teachers-ith h3 {
+  margin: 0.5rem 0;
+  font-family: 'Quicksand', sans-serif;
+  color: #273689;
+  font-size: 1.5em;
+}
+
+.carousel-card-teachers-ith p{
+    margin: 0.5rem 0;
+  font-family: 'Quicksand', sans-serif;
+  color: #273689;
+  font-size: 1em;
+}
+
+/* ========== Sección 9: Staff adicional ========== */
+
+.staff-adicional-ith {
+  text-align: center;
+  padding: 2em 1em;
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.staff-adicional-ith h2{
+      font-family: 'Nunito Sans', sans-serif;
+  font-size: 3.5em;
+  font-weight: 900;
+  color: #273689;
+  line-height: 1em;
+  letter-spacing: -3px;
+  margin: 0 0 0.5em 0;
+}
+
+.staff-adicional-ith h3 {
+  font-family: 'Nunito Sans', sans-serif;
+  color: #273689;
+  line-height: 1em;
+  text-align: center;
+  margin: 2em 0 0.5em;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.staff-adicional-ith p {
+  margin: 0.4em 0;
+  font-size: 1.6em;
+  color: #273689;
+}
+
+.staff-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2em;
+  margin: 2em auto;
+  max-width: 900px;
+}
+
+.separador-azul-staff {
+  width: 50px;
+  height: 1px;
+  background-color: #273689;
+  margin: 0 auto 0;
+}
+
+/* ========== Sección 10: Créditos Aladdin ========== */
+.ith-credits-section{
+  padding:3em 1.5em 4em;
+  color:#273689;
+  text-align:center;
+  font-family:'Quicksand',sans-serif;
+  max-width:900px;
+  margin:0 auto;
+}
+
+.credits-title{
+  font-family:'Nunito Sans',sans-serif;
+  font-size:2.2em;
+  font-weight:900;
+  letter-spacing:.5px;
+  text-transform:uppercase;
+  color:#273689;
+  margin:0 0 .2em 0;
+}
+
+.ith-credits-section .separador-ith{
+  width:120px;
+  height:3px;
+  margin:.8em auto 2em;
+}
+
+/* Pares rol / nombre */
+.credits-list{
+  display:grid;
+  gap:1.1em;
+  margin:1.2em auto 0;
+  max-width:680px;
+  padding:0;
+}
+
+.credit-pair{ 
+  display:grid; 
+  gap:.25em; 
+}
+
+.credits-list dt{
+  font-family:'Nunito Sans',sans-serif;
+  font-size:1.2em;
+  letter-spacing:.3px;
+  color:273689;
+  font-weight:800;
+}
+
+.credits-list dd{ 
+  margin:0; 
+  font-size:1.5em; 
+}
+
+/* Notas legales */
+.credits-smallprint,
+.credits-note{
+  max-width:760px;
+  margin:1.2em auto 0;
+  font-size:1.2em;
+  line-height:1.6;
+}
+
+/* Ilustración */
+.credits-illustration{ 
+  margin:1.6em auto .8em; 
+}
+
+.credits-illustration img{
+  width:440px;
+  height:auto;
+  display:block;
+  margin:.2em auto;
+  filter:drop-shadow(0 6px 14px rgba(0,0,0,.35));
+}
+
+/* CTA */
+.credits-cta{ 
+  margin-top:1.6em; 
+}
+
+.credits-cta .boton-anaranjado-ith{
+  top:0; 
+} /* evita el -50px de sección 1 */
+
+
+
+
+
+
+
+/* ========== Responsive ========== */
+
+  /* Ocultar luna y estrellas en móviles */
+@media (max-width: 768px) {
+  .aladdin-moon,
+  .aladdin-stars {
+    display: none !important;
+  }
+
+  /* ========== Sección 0: Banner Hero ========== */
+  .hero-ith-desktop { 
+    display: none; 
+  }
+  
+  .hero-aladdin-mobile {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* ========== Sección 1: Sobre el musical ========== */
+  .ith-content {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    gap: 0em;
+  }
+
+  /* ========== Sección 2: Mira nuestro tailer ========== */
+
+  .aladdin-trailer-cta .boton-anaranjado-ith { 
+    margin-top: 1.75em; 
+  }
+
+
+  /* ========== Sección 3: Sobre el Taller Montaje ========== */
+
+  .workshop-cta { 
+    flex-direction: column; 
+    max-width: 520px; 
+  }
+
+  .aladdin-workshop-grid { 
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    gap: 0em;  
+  }
+  
+  .workshop-gallery { 
+    width: 100%; 
+    margin-bottom: 2em;
+
+  }
+
+  /* ========== Sección 4: Producción Aladdin ========== */
+
+  /* ========== Sección 5 & 6: Cast 1 y Cast 2 ========== */
+  .carousel-card { 
+    flex: 0 0 100%; 
+  }
+  
+  .carousel-card img {
+    width: 80%;
+    height: auto;
+    max-width: 250px;
+    margin: 0 auto;
+  }
+  
+  .carousel-card h4,
+  .carousel-card p { 
+    font-size: 1rem; 
+  }
+
+  /* En móvil, las flechas permanecen ocultas (definido arriba) y ajustamos bordes laterales a 0 para coherencia */
+  .left-arrow,
+  .left-arrow-cast2,
+  .left-arrow-teachers { 
+    left: 0; 
+  }
+  
+  .right-arrow,
+  .right-arrow-cast2,
+  .right-arrow-teachers { 
+    right: 0; 
+  }
+
+  /* ========== Sección 7: Números Musicales ========== */
+
+  .aladdin-songs-section { 
+    padding: 2em 1em; 
+  }
+  
+  .aladdin-songs-section p { 
+    font-size: 1.2em; 
+  }
+
+  /* ========== Sección 8: Equipo Creativo ========== */
+  .carousel-card-teachers-aladdin { 
+    flex: 0 0 100%; 
+  }
+
+  /* ========== Sección 9: Staff adicional ========== */
+
+  .staff-grid { 
+    grid-template-columns: 1fr; 
+  } /* una columna en móvil */
+  
+  .staff-adicional-aladdin p { 
+    font-size: 1.2em; 
+    margin-bottom: 0; 
+  }
+
+  /* ========== Sección 10: Créditos Aladdin ========== */
+
+}
+
+
+/* Accesibilidad / Motion
+@media (prefers-reduced-motion: reduce) {
+  .aladdin-stars .star, .aladdin-moon { animation: none !important; }
+} /*
