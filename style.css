@@ -66,7 +66,7 @@ body {
 
 
 /* ========== Sección 0: Banner Hero ========== */
-.hero-aladdin-mobile { 
+.hero-ith-mobile { 
   display: none; 
 }
 
@@ -594,7 +594,7 @@ body {
     display: none; 
   }
   
-  .hero-aladdin-mobile {
+  .hero-ith-mobile {
     width: 100%;
     height: auto;
     display: block;
@@ -611,7 +611,7 @@ body {
 
   /* ========== Sección 2: Mira nuestro tailer ========== */
 
-  .aladdin-trailer-cta .boton-anaranjado-ith { 
+  .ith-trailer-cta .boton-anaranjado-ith { 
     margin-top: 1.75em; 
   }
 
@@ -623,7 +623,7 @@ body {
     max-width: 520px; 
   }
 
-  .aladdin-workshop-grid { 
+  .ith-workshop-grid { 
     justify-content: center;
     flex-direction: column;
     align-items: center;
@@ -671,16 +671,16 @@ body {
 
   /* ========== Sección 7: Números Musicales ========== */
 
-  .aladdin-songs-section { 
+  .ith-songs-section { 
     padding: 2em 1em; 
   }
   
-  .aladdin-songs-section p { 
+  .ith-songs-section p { 
     font-size: 1.2em; 
   }
 
   /* ========== Sección 8: Equipo Creativo ========== */
-  .carousel-card-teachers-aladdin { 
+  .carousel-card-teachers-ith { 
     flex: 0 0 100%; 
   }
 
@@ -690,7 +690,7 @@ body {
     grid-template-columns: 1fr; 
   } /* una columna en móvil */
   
-  .staff-adicional-aladdin p { 
+  .staff-adicional-ith p { 
     font-size: 1.2em; 
     margin-bottom: 0; 
   }
