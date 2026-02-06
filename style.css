@@ -584,10 +584,6 @@ body {
 
   /* Ocultar luna y estrellas en móviles */
 @media (max-width: 768px) {
-  .aladdin-moon,
-  .aladdin-stars {
-    display: none !important;
-  }
 
   /* ========== Sección 0: Banner Hero ========== */
   .hero-ith-desktop { 
